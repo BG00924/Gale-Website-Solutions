@@ -85,3 +85,40 @@ header nav ul li a {
     margin: 15px 50px;
     padding: 3px 7px;
 }
+/*banner styles end*/
+
+/*general styles begin*/
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+    margin: 30px 0;
+}
+.title {
+    width: 300px;
+    border-right: 2px solid var(--secondary-color);
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 36px;
+    top: 0;
+}
+
+.content {
+    
+}
+
+/*general styles end*/
+
+
+/*about me styles begin*/
+/*about me styles end*/
+
+/*work styles begin*/
+/*work styles end*/
+
+/*contact me styles begin*/
+/*contact me styles end*/
