@@ -9,12 +9,13 @@
     --secondary-color: rgb(59, 59, 59);
     --tertiary-color: rgb(137, 192, 194);
 }
-/*body sytles*/
+/*body styles begin*/
 body {
     background-color: var(--primary-color)
 } 
+/*body styles end*/
 
-/*Header*/
+/*header styles begin*/
 
 header {
     background-color: var(--secondary-color);
@@ -63,4 +64,24 @@ header nav ul li a {
     color: var(--tertiary-color);
     padding: 10px 0;
     font-size: 15px;
+}
+/*header style ends*/
+
+/*banner styles begin*/
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../Images/Placeholder.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.banner h2 {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    margin: 15px 50px;
+    padding: 3px 7px;
 }
