@@ -1,0 +1,66 @@
+/*Gale-Website-Solutions Styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color:  rgb(233, 238, 240);
+    --secondary-color: rgb(59, 59, 59);
+    --tertiary-color: rgb(137, 192, 194);
+}
+/*body sytles*/
+body {
+    background-color: var(--primary-color)
+} 
+
+/*Header*/
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin-right: 40px;
+    align-items: center;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header nav ul li {
+    border-bottom: 2px solid var(--tertiary-color);
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: var(--tertiary-color);
+    padding: 10px 0;
+    font-size: 15px;
+}
