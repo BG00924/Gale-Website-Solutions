@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color:  rgb(233, 238, 240);
-    --secondary-color: rgb(59, 59, 59);
-    --tertiary-color: rgb(137, 192, 194);
+    --primary-color:  rgba(233, 238, 240, 1);
+    --secondary-color: rgba(59, 59, 59, 1);
+    --tertiary-color: rgba(137, 192, 194, 1);
 }
 /*body styles begin*/
 body {
@@ -71,7 +71,7 @@ header nav ul li a {
 .banner {
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../Images/Placeholder.jpg);
+    background-image: url(../Images/ford\ \(2\).jpg);
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -118,8 +118,11 @@ header nav ul li a {
 
 /*general styles end*/
 
-
 /*about me styles begin*/
+.intro {
+    max-width: 50%;
+}
+
 /*about me styles end*/
 
 /*work styles begin*/
@@ -141,33 +144,63 @@ header nav ul li a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    min-height: 100px;
+    background-color: var(--secondary-color);
+    background-blend-mode: soft-light;
+    min-height: 125px;
+    text-decoration: none;
 }
 
 .work-grid-item.primary {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background-image: url(../Images/hero-bg.jpg);
+    background-image: url(../Images/02-run-buddy.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.work-grid-item.place-holder {
-    background-image: url(../Images/Placeholder.jpg);
+.work-grid-item.portfolio-1 {
+    background-image: url(../Images/02-portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work-grid-item.portfolio-2 {
+    background-image: url(../Images/02-portfolio-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work-grid-item.portfolio-3 {
+    background-image: url(../Images/02-portfolio-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work-grid-item.portfolio-4 {
+    background-image: url(../Images/02-portfolio-4.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .project-title {
     background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     margin-bottom: 10px;
     padding: 5px 10px;
+    z-index: 1;
 }
 
 .project-title p {
     font-size: 10px;
     padding-top: 5px;
 }
+
+.work-grid-item:hover {
+    background-color: rgba(59, 59, 59, .2);
+    transition: 1s;
+}
+
+
 /*work styles end*/
 
 /*contact me styles begin*/
@@ -196,3 +229,61 @@ header nav ul li a {
     font-size: 1.5em;
 }
 /*contact me styles end*/
+
+
+
+/* Media Query for smaller desktop screens and smaller*/
+@media screen and (max-width: 980px) {  
+    .title {
+        font-size: 24px;
+    }
+}
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    /* reformats the grid on smaller screens*/
+    
+    .work-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    .work-grid-item {
+        background-color: transparent;
+    }
+
+    .work-grid-item:hover {
+        display: none;
+    }
+    /*end grid format*/
+}
+
+
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+ @media screen and (max-width: 575px) {
+
+    /* change order that sections are displayed*/
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header nav {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+}
