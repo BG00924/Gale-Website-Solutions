@@ -14,4 +14,4 @@ Create a portfolio to showcase completed applications.
 ## Website
 https://bg00924.github.io/Gale-Website-Solutions/
 
-![Overview of Porfolio](/assets/images/portfolio-image.jpg)
+![Overview of Porfolio](./assets/images/portfolio-image.jpg)
